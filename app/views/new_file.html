@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="{{url}}public/xiangqing/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="{{url}}public/xiangqing/css/style.css"/>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="h-center">
+					确认并支付
+				</div>
+				<img src="{{url}}public/xiangqing/img/img__03.gif"/>
+			</header>
+			<section>
+				<div class="box">
+					
+					<dl>
+						<dt><img src="{{url}}public/showye/images/scenics/{{re['0']['img_url']}}"/></dt>
+						<dd>
+							<h1>{{re['0']['model']}}</h1>
+							<p>
+							   时间：{{re['0']['interval']}} <br> 
+							   路线：{{re['0']['line']}}
+							</p>
+							<span class="danjia">{{re['0']['taocan_price']}}元</span>
+							
+						</dd>
+					</dl>
+					<div class="box-right">
+						<a href="{{url}}index/quxiao/id/{{re['0']['num']}}"><img src="{{url}}public/xiangqing/img/1.png" alt=""></a>
+						<p><button>支付</button></p>
+					</div>
+				</div>
+				</div>
+			</section>
+		</div>
+	</body>
+		

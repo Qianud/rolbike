@@ -1,0 +1,99 @@
+@import url(m_reset.css);
+.add(@w,@h,@b){
+    width: @w;
+    height: @h;
+    background: @b;
+}
+.box(@jia){
+    display: -webkit-box;
+    -webkit-box-orient:@jia;
+}
+html,body,.wrap{
+    .add(100%,100%,0);
+    .box(vertical);
+    overflow: hidden;
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height: 4rem;
+    background: #333333; 
+    .box(horizontal);
+    font-size: 1.4rem;
+    line-height: 4rem;
+    text-align: center;
+    color: white;
+    .left{
+        width: 4rem;
+        height: 100%;
+        text-align: center;
+        a{
+            .box(horizontal);
+            color: white;
+        }
+        img{
+            margin-top: 1.3rem;
+            padding-left: 0.5rem;
+            padding-right: 0.3rem;
+        }
+    }
+    .center{
+        -webkit-box-flex:1;
+    }
+    .right{
+        width: 4rem;
+        height: 100%;
+    }
+}
+section{
+    -webkit-box-flex: 1;
+    overflow: scroll;
+    background: #efefef;
+    .main1{
+        .add(100%,4rem,white);
+        line-height: 4rem;
+        a{
+            .box(horizontal);
+        }
+        h1{
+            font-size: 1.4rem;
+            -webkit-box-flex: 1;
+            padding-left: 1rem;
+        }
+        img{
+            padding-right: 1rem;
+        }
+    }
+    .main2{
+        .add(100%,4rem,white);
+        line-height: 4rem;
+        margin-top: 0.1rem;
+        a{
+            .box(horizontal);
+        }
+        h1{
+            font-size: 1.4rem;
+            -webkit-box-flex: 1;
+            padding-left: 1rem;
+        }
+        img{
+            padding-right: 1rem;
+        }
+    }
+    .main3{
+        .add(100%,4rem,white);
+        line-height: 4rem;
+        margin-top: 0.1rem;
+        a{
+            .box(horizontal);
+        }
+        h1{
+            font-size: 1.4rem;
+            -webkit-box-flex: 1;
+            padding-left: 1rem;
+        }
+        img{
+            padding-right: 1rem;
+        }
+    }
+}

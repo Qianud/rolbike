@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="{{url}}public/css/kuaizhuce.css"/>
+    <link rel="stylesheet" type="text/css" href="{{url}}public/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{{url}}public/css/B2login.css"/>
+    <link rel="stylesheet" type="text/css" href="{{url}}public/css/shangchuan.css"/>
+    <link rel="stylesheet" type="text/css" href="{{url}}public/css/font-awesome.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="left"><a href="#"><i class="fa fa-angle-left fa-5x"></i><p>关闭</p></a></div>
+        <div class="right"><a href="#"><h1>确认信息</h1></a></div>
+    </header>
+    <section>
+        <div class="sec1">
+            <div class="s">
+                <img src="{{url}}{{zhi[0]['img_url']}}" style="height:70px; width:100px; "/>
+            </div>
+        </div>
+        <form action="{{url}}index/cg" method="post">
+            <div class="sec1">
+                <p style="width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+  padding-top: 18px;;
+  ">所属人:{{zhi[0]['username']}}</p>
+            </div>
+         <div class="sec1">
+              <p style="width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+  padding-top: 18px;;
+  ">车型:{{zhi[0]['car']}}</p>
+            </div>
+        <div class="sec1">
+              <p style="width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+  padding-top: 18px;;
+  ">期望回收价格:{{zhi[0]['price']}}</p>
+            </div>
+       <div class="sec1">
+              <p style="width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+  padding-top: 18px;;
+  ">使用时间:{{zhi[0]['u_time']}}</p>
+            </div>
+           <div class="sec1">
+              <p style="width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+  padding-top: 18px;;
+  ">接受结果邮箱:{{zhi[0]['email']}}</p>
+            </div>       
+        <div class="sec2">
+            <a href="#"><input type="submit" value="提交"  style=" height: 4.4rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  -webkit-box-sizing: border-box;
+   background: #46c68b;
+     width: 100%;
+  height: 4.4rem;
+  "></a>
+        </div>
+        </form>
+    </section>
+</div>
+</body>
+</html>
+<style type="text/css">
+    div
+    {
+        position: relative;
+    }
+    input
+    {
+    }
+</style>
+<script src="{{url}}public/jquery.js"></script>
+<script>
+
+</script>

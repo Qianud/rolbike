@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>跟我走</title>
+<link rel="stylesheet" type="text/css" href="{{url}}public/showye/css/style.css">
+<link rel="stylesheet" type="text/css" href="{{url}}public/showye/css/person.css">
+<script type="text/javascript" src="{{url}}public/showye/js/Adaptive.js"></script>
+</head>
+
+<body>
+
+<div class="head">
+    <div class="head-img">
+        <img src="{{url}}public/showye/images/person/head.png">
+        <a href=""><span class="line">未知</span></a>
+    </div>
+    <div class="logo-dbs">
+        <div class="dbs-img">
+          <img src="{{url}}public/showye/images/icon/logo.png">
+        </div>
+        <p>全球低价租车！</p>
+    </div>
+
+</div>
+
+<div class="whe">
+	<div class="whe-lt whe-br">
+        <a href="{{url}}index/money">
+    	<p class="lf-tp"><img src="{{url}}public/showye/images/person/flag.png">账户金额</p>
+        </a>
+        <p class="lf-bt"><span></span><span>账户余额:</span><span>￥{{ data[0]['sum_m'] }}</span></p>
+    </div>
+    <div class="whe-lt">
+    	<p class="lf-tp"><img src="{{url}}public/showye/images/icon/heart.png"><a href="{{url}}index/dindan">我的订单</a></p>
+        <p class="lf-bt"><span>当前订单</span></p>
+    </div>
+</div>
+<div class="whe">
+	<div class="whe-lt whe-br">
+        <a href="{{url}}desc/desclist">
+    	<p class="lf-tp"><img src="{{url}}public/showye/images/person/in.png">个人资料</p>
+        <p class="lf-bt"><span>{{data[0]['name']}}</span></p>
+    </a>
+    </div>
+    <div class="whe-lt">
+        <a href="{{url}}desc/Redeem">
+    	<p class="lf-tp"><img src="{{url}}public/showye/images/person/out.png">积分抽奖</p>
+        <p class="lf-bt">幸运大转盘</p>
+        </a>
+    </div>
+</div>
+<div class="whe">
+    <div class="whe-lt whe-br">
+        <a href="{{url}}desc/integr">
+        <p class="lf-tp"><img src="{{url}}public/showye/images/person/in.png">签到</p>
+        <p class="lf-bt"><span>当前积分：{{data[0]['integral']}}</span></p>
+    </a>
+    </div>
+</div>
+
+
+
+<footer>
+	<div class="foot">
+    	<img src="{{url}}public/showye/images/foot/ft_2.png">
+        <p><a href="{{url}}index/index">首页</a></p>
+    </div>
+	<div class="foot">
+        <img src="{{url}}public/showye/images/foot/ft_1.png">
+        <p>位置</p>
+    </div>
+	<div class="foot">
+    	<img src="{{url}}public/showye/images/foot/ft_3.png">
+        <p><a href="{{url}}index/dindan">订单</a></p>
+    </div>
+	<div class="foot act">
+    	<img src="{{url}}public/showye/images/foot/ft_4_4.png">
+        <p>个人</p>
+    </div>
+</footer>    
+    
+</body>
+</html>

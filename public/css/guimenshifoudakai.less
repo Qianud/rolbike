@@ -1,0 +1,117 @@
+@import url(m_reset.css);
+html{
+    font-size: 62.5%;
+}
+.box(@ver){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+.pos(a){
+    position: absolute;
+}
+.pos(r){
+    position: relative;
+}
+.full{
+    width: 100%;
+    height: 100%;
+}
+html,body{
+    .full;
+}
+.wrap-weba{
+    .full;
+    .box(vertical);
+}
+header{
+    width: 100%;
+    height: 4.4rem;
+    background: #333333;
+    .box(horizontal);
+    .pos(r);
+    color: white;
+    font-size: 1.7rem;
+    img{
+        .pos(a);
+        top: 1.4rem;
+        left: 1.6rem;
+        width: 0.9rem;
+        height: 1.6rem;
+    }
+    h1{
+       .pos(a);
+        top: 1.2rem;
+        left: 3.3rem;
+        color: white;
+        font-weight: bold;
+    }
+    h2{
+        margin: 0 auto;
+        line-height: 4.4rem;
+        font-weight: bold;
+    }
+}
+section{
+    -webkit-box-flex: 1;
+    .p1{
+        padding-left: 3.6rem;
+        padding-right: 3.6rem;
+        font-size: 1.7rem;
+        color: #666666;
+        text-align: center;
+        line-height: 2.6rem;
+        margin-top: 1rem;
+        font-weight: bold;
+    }
+    img{
+        display: block;
+        margin: 10px auto;
+        width: 17.1rem;
+        height: 17.15rem;
+    }
+    .p2{
+        text-indent: 2em;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        font-size: 1.7rem;
+        color: #666666;
+        line-height: 2.6rem;
+        margin-top: 1rem;
+        font-weight: bold;
+        span{
+            color: #46cc91;
+        }
+    }
+    .p3{
+        text-indent: 2em;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+        font-size: 1.7rem;
+        color: #666666;
+        line-height: 2.6rem;
+        margin-top: 1rem;
+        font-weight: bold;kh
+        span{
+            color: #ff9242;
+        }
+    }
+    .mmm{
+        text-align: center;
+        button{
+            outline: none;
+            width: 12rem;
+            height: 4.4rem;
+            border-radius: 15px;
+            border: none;
+            font-size: 1.6rem;
+            color: white;
+            margin-top: 4rem;
+        }
+        #wan{
+            background: #fa9042;
+        }
+        #ji{
+            background: #46c68b;
+        }
+    }
+}

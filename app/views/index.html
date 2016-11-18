@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Rol租车</title>
+<link rel="stylesheet" type="text/css" href="{{url}}public/showye/css/style.css">
+<link rel="stylesheet" type="text/css" href="{{url}}public/showye/css/index.css">
+
+<script type="text/javascript" src="{{url}}public/showye/js/Adaptive.js"></script>
+</head>
+
+<body>
+
+<header>
+	<i class="logo"></i>
+    <a href="#">
+    <div class="sch">
+    	<p><img src="{{url}}public/showye/images/icon/sch.png">特惠套餐</p>
+    </div>
+    </a>
+</header>
+
+<div id="_contain">
+
+    <div class="sec1">
+                <div class="box">
+                    <img src="{{url}}public/1.jpg"/>
+                    <img src="{{url}}public/2.jpg"/>
+                    <img src="{{url}}public/3.jpg"/>
+                </div>
+                <ul>
+                    <li class="lis"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+    </div>
+<div class="menu">
+	<div class="nav">
+        <a href="{{url}}gossip/index"><img src="{{url}}public/showye/images/menu/nav_1.png"></a>
+        <p>骑谈</p>
+    </div>
+	<div class="nav">
+    <a href="{{url}}index/preferential">
+    	<img src="{{url}}public/showye/images/menu/nav_2.png">
+        <p>优惠</p>
+    </div>
+    <div class="nav">
+        <a href="{{url}}index/tuikuan">
+            <img src="{{url}}public/showye/images/menu/nav_3.png">
+            <p>退款</p>
+        </a>
+    </div>
+    <a href="{{url}}index/recycling">
+        <div class="nav">
+            <img src="{{url}}public/showye/images/menu/nav_4.png">
+            <p>回收</p>
+        </div> </a>
+</div>
+
+<div class="name">
+	<p>车型推荐</p>
+</div>
+
+<div class="contain">
+	<div class="ad">
+    	<img src="{{url}}public/showye/images/scenics/scenic_6.png">
+    </div>
+    <div class="ad-left">
+    	<img src="{{url}}public/showye/images/scenics/a1c8133dtw1e087e5rlzmj.jpg">
+    </div>
+    <div class="add-right">
+    	<img src="{{url}}public/showye/images/scenics/897761.jpg">
+    </div>
+</div>
+
+<div class="name">
+	<p>折扣行</p>
+</div>
+
+<div class="favorable">
+    {% for val in data %}
+<div class="fb">
+    <div class="fb-lt">
+        <a href="{{url}}index/show_buy/id/{{val.id}}">
+    	<img src="http://qianduphp.site/admin/public/images/uploads/{{val.img_url}}">
+        <p class="fb-name">{{val.model}}</p>
+        <p class="price">
+        	<span class="discount">4.7折</span>
+            <span class="num"><big>{{val.hour_price}}</big>元/每分钟</span>
+        </p>
+        </a>
+    </div>
+</div>
+    {% endfor %}
+<!--<div class="fb">-->
+    <!--<div class="fb-lt">-->
+    	<!--<img src="{{url}}public/showye/images/scenics/lao28.jpg">-->
+        <!--<p class="fb-name">怀旧经典系列</p>-->
+        <!--<p class="price">-->
+        	<!--<span class="discount">8.7折</span>-->
+            <!--<span class="num"><big>80</big>元/天起</span>-->
+        <!--</p>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="fb">-->
+    <!--<div class="fb-lt">-->
+    	<!--<img src="{{url}}public/showye/images/scenics/chengshi0.jpg">-->
+        <!--<p class="fb-name">城市游系列</p>-->
+        <!--<p class="price">-->
+        	<!--<span class="discount">6.2折</span>-->
+            <!--<span class="num"><big>10</big>元/天起</span>-->
+        <!--</p>-->
+    <!--</div>-->
+<!--</div>-->
+<!--<div class="fb">-->
+    <!--<div class="fb-lt">-->
+    	<!--<img src="{{url}}public/showye/images/scenics/90F58PICBXv.jpg">-->
+        <!--<p class="fb-name">都市狂野系列</p>-->
+        <!--<p class="price">-->
+        	<!--<span class="discount">2.8折</span>-->
+            <!--<span class="num"><big>30</big>元/天起</span>-->
+        <!--</p>-->
+    <!--</div>-->
+<!--</div>-->
+
+</div>
+ 
+<div class="more">
+	<p>更多车型,敬请期待<img src="{{url}}public/showye/images/icon/arr-right.png"></p>
+</div>    
+
+</div>
+
+<footer>
+	<div class="foot act">
+    	<img src="{{url}}public/showye/images/foot/ft_2.png">
+        <p><a href="{{url}}index/index">首页</a></p>
+    </div>
+    <a href="{{url}}index/weizhi">
+        <div class="foot">
+            <img src="{{url}}public/showye/images/foot/ft_1_1.png">
+            <p style="width: 20px;">About us</p>
+        </div>
+    </a>
+	<div class="foot">
+    	<img src="{{url}}public/showye/images/foot/ft_3.png">
+        <p><a href="{{url}}index/dindan">订单</a></p>
+    </div>
+
+        <div class="foot">
+
+    	<img src="{{url}}public/showye/images/foot/ft_4.png">
+                <a href="{{url}}public/showye/person/person.html">
+        <p><a href="{{url}}index/geren">个人</a></p>
+            </a>
+    </div>
+
+</footer>    
+    
+<script type="text/javascript" src="{{url}}public/showye/js/jquery-1.7.1.min.js"></script>
+</body>
+</html>
+<script src="{{url}}public/js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    var index=0;
+    setInterval(function(){
+        index++;
+        console.log(index)
+        if(index>2){
+            index=0;
+        }
+        $('.box img').hide().eq(index).show();
+        $('ul li').removeClass('lis').eq(index).addClass('lis');
+    },5000);
+</script>

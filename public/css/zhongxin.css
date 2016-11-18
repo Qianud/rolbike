@@ -1,0 +1,111 @@
+@import url(m_reset.css);
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 62.5%;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  text-align: center;
+  color: white;
+}
+header .left {
+  width: 4rem;
+  height: 100%;
+  text-align: center;
+}
+header .left a {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  color: white;
+}
+header .left img {
+  margin-top: 1.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.3rem;
+}
+header .center {
+  -webkit-box-flex: 1;
+}
+header .right {
+  width: 4rem;
+  height: 100%;
+}
+section {
+  -webkit-box-flex: 1;
+  overflow: scroll;
+  background: #efefef;
+}
+section .main {
+  width: 100%;
+  height: auto;
+  background: #ffc0cb;
+}
+section .main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+section .main1 {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  line-height: 4rem;
+}
+section .main1 a {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .main1 h1 {
+  font-size: 1.4rem;
+  -webkit-box-flex: 1;
+  padding-left: 1rem;
+}
+section .main1 img {
+  padding-right: 1rem;
+}
+section .main2 {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  line-height: 4rem;
+  margin-top: 0.1rem;
+}
+section .main2 a {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .main2 h1 {
+  font-size: 1.4rem;
+  -webkit-box-flex: 1;
+  padding-left: 1rem;
+}
+section .main2 img {
+  padding-right: 1rem;
+}
+footer {
+  width: 100%;
+  height: 4rem;
+  background: white;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+footer dl {
+  -webkit-box-flex: 1;
+  height: 100%;
+  text-align: center;
+  padding-top: 0.3rem;
+  box-sizing: border-box;
+}

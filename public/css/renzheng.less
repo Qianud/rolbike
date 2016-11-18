@@ -1,0 +1,103 @@
+@import url(m_reset.css);
+
+.box(@zzy){
+    display: -webkit-box;
+    -webkit-box-orient: @zzy;
+}
+.full{
+    width: 100%;
+    height: 100%;
+}
+html,body,.wrap{
+    .full;
+    .box(vertical);
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height:4rem;
+    background: #333333;
+    .box(horizontal);
+    .left{
+        .box(horizontal);
+        p{
+            line-height: 4rem;  
+            font-size: 1.4rem;
+            margin-left: 0.6rem;
+            color: white;
+        }
+        i{
+            color: white;
+            margin-top: 1.2rem;
+            margin-left: 1.5rem;
+        }
+    }
+   .right{
+      -webkit-box-flex: 1;
+      text-align: center;
+       h1{
+            font-size: 1.4rem;
+            color: white;
+            line-height: 4rem;
+        }
+   }
+}
+section{
+    -webkit-box-flex: 1;
+    background: #f5f5f5;
+    .sec1{
+        width: 100%;
+        height: 17.2rem;
+        padding-left: 1.5rem;
+        background: white;
+        margin-top:1rem ;
+        -webkit-box-sizing: border-box;
+        .sec{
+           height: 4rem;
+           border-bottom: 1px solid #b0e5cd;
+           line-height: 4rem;
+           font-size: 1.6rem;
+           font-weight: bold;
+           .box(horizontal);
+           p{
+               margin-right: 1rem;
+           }
+           .left{
+               -webkit-box-flex: 1;
+               input{
+                   width: 100%;
+                   height: 3rem;
+                   border: none;
+               }
+           }
+           select{
+               width: 7.8rem;
+               height: 2.5rem;
+               color: #dfdfdf;
+               border-color: #dfdfdf;
+               margin-right: 2rem;
+               border-radius: 0.5rem;
+           }
+           h2{
+               -webkit-box-flex: 1;
+           }
+        }
+    }
+    .sec2{
+        height: 4.4rem; 
+         padding: 0 1rem;
+         margin-top: 1rem;
+         -webkit-box-sizing: border-box;
+         button{
+             width: 100%;
+             height: 4.4rem; 
+             background: #46c68b;
+             color: white;
+             text-align: center;
+             border: none;
+             border-radius: 1rem;
+             font-size: 1.6rem;
+             font-weight: bold;
+         }
+    }
+}

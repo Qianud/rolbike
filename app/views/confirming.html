@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>退款</title>
+    <link rel="stylesheet" type="text/css" href="{{url}}public/css/kuaizhuce.css"/>
+    <link rel="stylesheet" type="text/css" href="{{url}}public/css/font-awesome.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="left"><a href="login.html"><i class="fa fa-angle-left fa-5x"></i><p	>关闭</p></a></div>
+        <div class="right"><a href="#"><h1 align="center">确认信息</h1></a></div>
+    </header>
+    <section>
+        <form name="agreeform" action="{{url}}index/ruku" method="post">
+            <div class="sec1">
+
+              <p style="width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+  padding-top: 18px;;
+  ">退款人:{{zhi[0]['username']}}</p>
+            </div>
+            <div class="sec1">
+                <i class="fa fa-mobile fa-5x"></i>
+                <p style="width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+  padding-top: 18px;;
+  ">{{zhi[0]['desc']}}</p>
+            </div>
+            <div class="sec1_2">
+                <i class="fa fa-unlock-alt fa-5x"></i>
+                <p style="width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+  padding-top: 18px;;
+  ">{{zhi[0]['zhifubao']}}</p>
+            </div>
+            <div class="sec1_3">
+                <img src="{{url}}public/img/kuaizhuce/images/img1_03.png"/>
+                <p style="width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+  padding-top: 18px;;
+  ">{{zhi[0]['call_email']}}</p>
+            </div>
+            <div class="sec2">
+                <a href="renzheng.html"><input type="submit" value="确认退款"  style=" height: 4.4rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  -webkit-box-sizing: border-box;
+   background: #46c68b;
+     width: 100%;
+  height: 4.4rem;
+  "></a>
+            </div>
+        </form>
+    </section>
+</div>
+</body>
+</html>

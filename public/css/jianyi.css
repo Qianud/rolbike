@@ -1,0 +1,79 @@
+@import url(m_reset.css);
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  background: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 62.5%;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  font-size: 1.4rem;
+  line-height: 4rem;
+  text-align: center;
+  color: white;
+}
+header .left {
+  width: 4rem;
+  height: 100%;
+  text-align: center;
+}
+header .left a {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  color: white;
+}
+header .left img {
+  margin-top: 1.3rem;
+  padding-left: 0.5rem;
+  padding-right: 0.3rem;
+}
+header .center {
+  -webkit-box-flex: 1;
+}
+header .right {
+  width: 4rem;
+  height: 100%;
+}
+section {
+  -webkit-box-flex: 1;
+  overflow: scroll;
+  background: #efefef;
+}
+section .main1 {
+  width: 100%;
+  height: 3.5rem;
+  background: #efefef;
+  line-height: 3.5rem;
+}
+section .main1 a {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  color: black;
+}
+section .main1 h1 {
+  -webkit-box-flex: 1;
+  padding-left: 1rem;
+}
+section .main2 {
+  width: 100%;
+  height: auto;
+  background: #efefef;
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+}
+section .main2 textarea {
+  outline: none;
+  background: white;
+  display: block;
+  width: 100%;
+  color: #a0a0a0;
+}

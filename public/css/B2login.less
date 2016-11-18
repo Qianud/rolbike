@@ -1,0 +1,97 @@
+@import url(m_reset.css);
+
+.box(@zzy){
+    display: -webkit-box;
+    -webkit-box-orient: @zzy;
+}
+.full{
+    width: 100%;
+    height: 100%;
+}
+html,body,.wrap{
+    .full;
+    .box(vertical);
+    font-size: 62.5%;
+}
+header{
+    width: 100%;
+    height: 3rem;
+    background: black;
+    dl{
+        padding-left: 1.5rem;
+        line-height: 3rem;
+        .box(horizontal);
+        dd{
+            color: #fff;
+            padding-left: 0.5rem;
+        }
+    }
+}
+section{
+    -webkit-box-flex: 1;
+    .sec1{
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .sec2{
+        width: 100%;
+        height: 4rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+        box-sizing: border-box;
+        position: relative;
+        input{
+            display: block;
+            width: 100%;
+            height: 3.7rem;
+            outline: none;
+            text-indent: 2.5em;
+        }
+        img{
+            position: absolute;
+            left: 1.5rem;
+            top: 1rem;
+            border-right: 1px solid #e9e9e9;
+            padding-right: 0.5rem;
+        }
+        button{
+            position: absolute;
+            top: 0.7rem;
+            right: 0.8rem;
+            width: 8.5rem;
+            height: 2.5rem;
+            background: #46c68b;
+            border-radius: 1rem;
+            border: none;
+            outline: none;
+            color: #e7f4e7;
+            font-weight: 600;
+        }
+    }
+    .sec3{
+        width: 100%;
+        height: 4rem;
+        margin-top: 2.5rem;
+        padding:0 1rem;
+        box-sizing: border-box;
+        button{
+            width: 100%;
+            height: 4rem;
+            background: #46c68b;
+            border-radius: 0.5rem;
+            color: #e7f4e7;
+            border:none;
+            outline: none;
+            font-size: 1.4rem;
+            letter-spacing: 1rem;
+            font-weight: 600;
+        }
+        a{
+             color: #e7f4e7;
+        }
+    }
+}

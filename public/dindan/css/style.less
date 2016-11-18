@@ -1,0 +1,144 @@
+@import url(m_style.css);
+
+.box(@zzy){
+    display: -webkit-box;
+    -webkit-box-orient: @zzy;
+}
+//封装高宽
+.full{
+    height: 100%;
+    width: 100%;
+}
+html,body,.warp{
+    .full;
+    .box(vertical);
+    font-size: 62.5%;
+}
+
+header{
+    width: 100%;
+    height: 4rem;
+    background: #1a1a1e;
+    .box(horizontal);
+    line-height: 4rem;
+    .header-left{
+//      width: 2rem;
+        height: auto;
+        margin-left: 1rem;
+        margin-bottom:-1rem ;
+    }
+    .header-center{
+        -webkit-box-flex: 1;
+        p{
+            color: #fff;
+            font-size: 1.6rem;
+            margin-left: 0.5rem;
+            font-weight: 600;
+        }
+        
+    }
+    .header-right{
+        width: 4rem;
+        height: auto;
+    }
+    
+}
+section{
+    -webkit-box-flex: 1;
+    background: #f9f9f9;
+    .sec1{
+        width: 100%;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        border-bottom: 0.1rem solid #e1e1e1;
+        background: #fff;
+        .box(horizontal);
+        .sec1-left{
+    //      width: 2rem;
+            height: auto;
+            margin-left: 1rem;
+            margin-bottom:-1rem ;
+            img{
+                height: 2rem;
+            }
+        }
+        .sec1-center{
+            -webkit-box-flex: 1;
+            p{
+                color: black;
+                font-size: 2rem;
+                margin-left: 0.5rem;
+                font-weight: 600;
+                text-align: center;
+                
+            }
+            
+        }
+        .sec1-right{
+            width: 4rem;
+            img{
+                height: 2rem;
+            }
+        }
+    }
+    .sec2{
+        width: 100%;
+        height: 4rem;
+        border-bottom:  0.2rem solid #e1e1e1;
+        background: #fff;
+        ul{
+            .box(horizontal);
+            line-height: 4rem;
+            font-size: 1.5rem;
+            li{
+                -webkit-box-flex: 1;
+                text-align: center; 
+                margin: 0 1.5rem;
+                -webkit-box-sizing: border-box;
+                font-weight: 600;
+            }
+            li:first-child{
+                color: #f3b90d;
+                border-bottom: 0.2rem solid #f3b90d;
+            }
+        }
+    }
+    .hide{
+        display: none;
+    }
+    .sec3{
+        width: 100%;
+        height: auto;
+        img{
+            display: block;
+            margin: 6rem auto;
+            margin-bottom: 0rem;
+        }
+        h1{
+            font-weight: normal;
+            text-align: center;
+            margin-top: 0.8rem;
+            font-size: 1.3rem;
+        }
+        h2{
+            font-weight: normal;
+            text-align: center;
+            margin-top: 0.2rem;
+            font-size: 1.3rem;
+        }
+        button{
+            width: 10rem;
+            height: 4rem;
+            color: #9d5e07;
+            font-weight: 600;
+            background: #ffd702;
+            border: none;
+            outline: none;
+            border-radius: 0.5rem;
+            margin: 1rem auto;
+            display: block;
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+        }
+    }
+}

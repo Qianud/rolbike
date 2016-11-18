@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url}}public/css/cunjian.css" />
+</head>
+<body>
+<div class="wrap-weba">
+    <header>
+        <a href="#"><img src="{{url}}public/img/确认收货/images/B7-05-02在线状态下柜门未弹开页面_03.png" alt="" /></a>
+        <a href="{{url}}index/index"><h1>关闭</h1></a>
+        <h2>还车成功</h2>
+    </header>
+    <section>
+        <p><img src="{{url}}public/QQ图片20161013134927.png" alt="" /></p>
+        <p style="margin-top: 30px;">您退还的车型是：{{data['model']}}</p>
+       <p style="margin-top: 30px;">每分钟：{{data['hour_price']}}元</p>
+        <p style="margin-top: 30px;">您耗时：{{data['haos']}}分钟，共消费{{data['xiaofei']}}元</p>
+        <a href="{{url}}index/geren"><button class="queren">确认</button></a>
+    </section>
+    <footer></footer>
+</div>
+</body>
+</html>

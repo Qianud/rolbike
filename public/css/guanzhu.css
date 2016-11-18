@@ -1,0 +1,60 @@
+@import url(m_style_guanzhu.css);
+.full {
+    height: 100%;
+    width: 100%;
+}
+html,
+body,
+.warp {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    font-size: 62.5%;
+}
+section {
+    -webkit-box-flex: 1;
+    background: #f9f9f9;
+    text-align: center;
+}
+section img {
+    margin-top: 10rem;
+    -webkit-animation: donghua 5s ease;
+}
+section p {
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    color: #ccc;
+}
+section button {
+    width: 20rem;
+    height: 3rem;
+    border: none;
+    background: #8c8c8c;
+    margin-top: 22rem;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    color: #ffffff;
+    font-weight: 600;
+}
+section button span {
+    visibility: hidden;
+}
+@-webkit-keyframes donghua {
+    0% {
+        opacity: 0;
+        /*-webkit-transform: translate(0px, 0px);*/
+        /*-webkit-transform: rotateY(0deg);*/
+    }
+    50% {
+        opacity: 0.5;
+        /*-web
+        kit-transform: translate(0px, -50px);*/
+        /*-webkit-transform: rotateY(180deg);*/
+    }
+    100% {
+        opacity: 1;
+        /*-webkit-transform: translate(0px, 0px);*/
+        /*-webkit-transform: rotateY(360deg);*/
+    }
+}

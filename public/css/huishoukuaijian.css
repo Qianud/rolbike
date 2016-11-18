@@ -1,0 +1,157 @@
+@import url(m_reset.css);
+html {
+  font-size: 62.5%;
+}
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.wrap-weba {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 4.4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  position: relative;
+  color: white;
+  font-size: 1.7rem;
+}
+header .nn {
+  position: absolute;
+  top: 1.4rem;
+  left: 1.6rem;
+  width: 0.9rem;
+  height: 1.6rem;
+}
+header .mm {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.6rem;
+  width: 1.7rem;
+  height: 1.7rem;
+}
+header h1 {
+  position: absolute;
+  top: 1.2rem;
+  left: 3.3rem;
+  color: white;
+  font-weight: bold;
+}
+header h2 {
+  margin: 0 auto;
+  line-height: 4.4rem;
+  font-weight: bold;
+}
+section {
+  -webkit-box-flex: 1;
+  background: #efefef;
+}
+section .tex {
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+section .tex input {
+  outline: none;
+  margin-top: 1rem;
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  border: none;
+  text-indent: 2em;
+  background: url(../img/确认收货/images/images/B10-02回收正123常件列表_03_03.png) no-repeat center left #ffffff;
+  background-size: 15%;
+  border: 1px #cacaca solid;
+}
+section .tex .qq {
+  margin-right: 0.6rem;
+}
+section .te {
+  margin-left: 1.6rem;
+  margin-right: 1.6rem;
+}
+section .te input {
+  outline: none;
+  margin-top: 1rem;
+  width: 15rem;
+  height: 4rem;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  border: none;
+  background: url(../img/确认收货/images/images/B10-02回收正常件1列表_07.png) no-repeat center right #ffffff;
+  background-size: 15%;
+  border: 1px #cacaca solid;
+}
+section .te .ee {
+  margin-right: 0.6rem;
+}
+section button {
+  width: 20rem;
+  height: 4rem;
+  font-size: 1.7rem;
+  color: white;
+  background: #46C68B;
+  margin: 0 auto;
+  margin-top: 1.4rem;
+  border-radius: 32px;
+  border: none;
+  display: block;
+}
+section .a {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+  padding-left: 1.6rem;
+  box-sizing: border-box;
+  color: #626262;
+}
+section .aa {
+  width: 100%;
+  height: 5rem;
+  background: white;
+  line-height: 5rem;
+  font-size: 2.2rem;
+  padding-left: 1.6rem;
+  box-sizing: border-box;
+  border-bottom: 1px #efefef solid;
+  position: relative;
+}
+section .aa span {
+  padding-left: 11rem;
+}
+section .aa span img {
+  position: absolute;
+  top: 1.7rem;
+  right: 1.6rem;
+  vertical-align: middle;
+}
+section .bb {
+  width: 100%;
+  height: 5rem;
+  background: white;
+  line-height: 5rem;
+  font-size: 2.2rem;
+  padding-left: 1.6rem;
+  box-sizing: border-box;
+  position: relative;
+}
+section .bb span {
+  padding-left: 11rem;
+}
+section .bb span img {
+  position: absolute;
+  top: 1.7rem;
+  right: 1.6rem;
+  vertical-align: middle;
+}

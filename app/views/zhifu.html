@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url}}public/css/B2login.css"/>
+    <link rel="stylesheet" href="{{url}}public/css/chongzhizhongxin.css" />
+    <script src="{{url}}public/js/jquery-1.9.1.min.js"></script>
+    <style>
+    .sp
+    {
+        width: 100%;
+height: 4.4rem;
+border: 0.2rem solid #ebebeb;
+padding-left: 2.8rem;
+-webkit-box-sizing: border-box;
+padding-top: 18px;
+    }
+    .sps
+    {
+        height: 4.4rem;
+padding: 0 1rem;
+margin-top: 1rem;
+-webkit-box-sizing: border-box;
+ background: #46c68b;
+   width: 100%;
+height: 4.4rem;
+
+    }
+    </style>    
+</head>
+<body>
+<div class="wrap-weba">
+    <header>
+        <a href="#"><img src="{{url}}public/img/确认收货/images/B7-05-02在线状态下柜门未弹开页面_03.png" alt="" /></a>
+        <a href="{{url}}index/geren"><h1>关闭</h1></a>
+        <h2>充值中心</h2>
+    </header>
+
+    <section>
+        <img src="{{url}}public/img/确认收货/images/images/B8-01充值中心页面选择充值类型_02.png" alt="" />
+<br/><hr/>
+ <form action='{{url}}index/desccong' method='post'>
+ <tr>
+<td>
+<input class='sp' type='text' disabled="disabled" value="订单号：{{dat[0]['num']}}---支付金额{{dat[0]['taocan_price']}}元" name='sum'/></td>
+<input class='sp' type='hidden' value="{{dat[0]['taocan_price']}}" name='sum_m'/>
+<input class='sp' type='hidden' value="{{dat[0]['id']}}" name='id'/>
+</td>
+</tr>
+<tr>
+<td>
+<input class='sp' type='password' placeholder='请输入支付密码' name='pdw'/></td>
+</tr>
+
+<tr><td>
+<input class='sps' type='submit'  value='支付'/>
+</td>
+</tr>
+ </form>
+         <span id="s" style='display:block;margin-left:40%;font-size: 1.4rem; padding-top:15px'>{{data}}</span>
+    </section>
+    <footer></footer>
+</div>
+</body>
+</html>
+<script>
+    $(function()
+    {
+ var data="{{data}}";
+    if(data!="")
+    {
+    var a=setInterval(function(){
+        $("#s").fadeTo("slow",0.0);$("#s").fadeTo("slow",0.0);
+    },1000
+);  
+    }
+    else
+    {
+        $("#s").css("display","none")
+    }        
+    })
+</script>

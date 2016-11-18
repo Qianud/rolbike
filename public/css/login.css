@@ -1,0 +1,94 @@
+@import url(m_reset.css);
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 62.5%;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header i {
+  color: white;
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+}
+header h1 {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 4rem;
+  margin-left: 0.5rem;
+}
+section {
+  -webkit-box-flex: 1;
+}
+section .sec {
+  height: auto;
+}
+section .sec img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+section .sec1 {
+  height: 4.4rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  position: relative;
+  -webkit-box-sizing: border-box;
+}
+section .sec1 input {
+  width: 100%;
+  height: 4.4rem;
+  border: 0.2rem solid #ebebeb;
+  padding-left: 2.8rem;
+  -webkit-box-sizing: border-box;
+}
+section .sec1 i {
+  position: absolute;
+  top: 1.5rem;
+  left: 2.5rem;
+}
+section .sec2 {
+  height: 4.4rem;
+  margin-top: 1.2rem;
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+}
+section .sec2 button {
+  width: 100%;
+  height: 4.4rem;
+  background: #cccccc;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+section .sec3 {
+  height: 2.8rem;
+}
+section .sec3 ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .sec3 ul li {
+  -webkit-box-flex: 1;
+  line-height: 2.8rem;
+  text-align: center;
+}
+section .sec3 ul li a {
+  color: #a1a1a1;
+}

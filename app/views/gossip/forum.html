@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="mobile web app, mobile template, mobile design, mobile app design, mobile app theme, mobile wordpress theme, my mobile app" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<link rel="stylesheet" type="text/css" href="{{url}}public/gossip/css/css.css">
+<title>骑谈列表页</title>
+</head>
+
+<body>
+<div class="main">
+    <div class="logo"><div class="img"><!-- <img src="{{url}}public/gossip/img/logo.png"> --></div></div>
+    <div class="header">
+            <a href="{{url}}index/index" class="go_left"><img src="{{url}}public/gossip/img/go.png"></a>
+            <span>骑谈社区</span>
+            <a href="{{url}}gossip/upload" class="fa_left"><img src="{{url}}public/gossip/img/fabu.png"></a>
+    
+    </div>
+    {% for val in re %}
+    <div class="wrap" >
+    		<UL id="container">
+            
+            <LI class="box" >
+            		<div class="author">
+                    		<a href="#"><img src="{{url}}public/gossip/img/icon/icon2.png"></a>
+                            <p class="author_name">楼主：{{val.name}}</p>
+                            <p class="author_time">时间：{{val.time}}</p>
+                            <a href="#" class="close"><img src="{{url}}public/gossip/img/close.png"></a>
+                    </div>
+                    <a href="#">
+                        <div class="topic">
+                            <div><img class="lazy" src="{{url}}public/gossip/img/data.png"  data-original="{{url}}{{val.img_url}}"></div>
+                            <p>{{val.content}}</p>
+                        </div>
+                    </a>
+                    <!-- <div class="click_hf">
+                        <a class="zan"><img  src="{{url}}public/gossip/img/zan1.png"></a>
+                        <span>15</span>
+                        <a  class="huifu"><img src="{{url}}public/gossip/img/huifu.png"></a>
+                        <a  class="fenx"></a>                  
+                    </div> -->
+            
+            </LI>           
+           
+            </UL>
+      {% endfor %}
+
+    
+    </div>
+    
+    
+</div>    
+
+</body>
+<script src="{{url}}public/gossip/js/jquery-1.11.0.min.js"></script>
+<script src="{{url}}public/gossip/js/jquery.lazyload.js?v=1.9.1"></script>
+<script type="text/javascript">
+  $(function() {
+         $("img.lazy").lazyload({
+			 effect: "fadeIn",
+			 placeholder: "img/data.png",
+			 threshold :200
+			 });
+  });
+
+</script>
+</html>

@@ -1,0 +1,67 @@
+@import url(m_reset.css);
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 62.5%;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #333333;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header i {
+  color: white;
+  margin-top: 1.2rem;
+  margin-left: 2rem;
+}
+header .right {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+header .right h1 {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 4rem;
+  margin-left: 0.5rem;
+}
+section {
+  -webkit-box-flex: 1;
+}
+section .sec {
+  height: 3.8rem;
+  padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+  border-bottom: 1px solid  #ededed;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .sec button {
+  width: 5.2rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  background: #46c68b;
+  margin-top: 0.4rem;
+  border: none;
+}
+section .sec p {
+  line-height: 3.8rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+section .sec h1 {
+  -webkit-box-flex: 1;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>特惠路线</title>
+    <link rel="stylesheet" href="{{url}}public/dindan/css/style.css">
+        <link rel="stylesheet" type="text/css" href="{{url}}public/css/guanliqu.css"/>
+        <link rel="stylesheet" type="text/css" href="{{url}}public/css/font-awesome.min.css"/>    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+    .sps
+    {
+        height: 4.4rem;
+padding: 0 1rem;
+margin-top: 1rem;
+-webkit-box-sizing: border-box;
+ background: #46c68b;
+   width: 100%;
+height: 4.4rem;
+
+    }
+    </style> 
+</head>
+<body>
+<div class="warp">
+    <section>
+			<header>
+				<div class="left">
+					<a href="{{url}}index/preferential"><i class="fa fa-angle-left fa-5x"></i></a>
+				</div>
+				<div class="right">
+					<h1>特惠订单</h1>
+				</div>
+			</header>    
+    {% for user in re %}  
+			<section>
+				<div class="sec">
+
+					<p>订单号：<span>{{user.num}}</span></p>
+				</div>
+				<div class="sec">
+					<p>昵称：<span>{{user.name}}</span></p>
+				</div>
+				<div class="sec">
+					<p>手机号：<span>{{user.phone}}</span></p>
+				</div>
+				<div class="sec">
+					<p>车辆：<span>{{user.model}}</span></p>
+				</div>
+				<div class="sec">
+					<p>线路：<span>{{user.line}}</span></p>
+				</div>
+				<div class="sec">
+					<p>时间：<span>{{user.interval}}</span></p>
+				</div>
+				<div class="sec">
+					<p>金额：<span style="color:red">{{user.taocan_price}}</span>元</p>
+				</div>
+				<div class="sec">
+				{% if user.status == 0 %}
+					<p>订单状态：
+					
+					<span style="color:red">
+						未确认
+					</span></p>
+					{% endif %}
+					
+					{% if user.status == 1 %}
+					<p>订单状态：
+					<span style="color:red">
+						已确认
+					</span></p>
+					{% endif %}
+				</div>
+				<div class="sec">
+				{% if user.p_status == 0 %}
+					<p>支付状态：
+					
+					<span style="color:red">
+						未支付
+					</span></p>
+					{% endif %}
+					{% if user.p_status == 1 %}
+					<p>支付状态：
+					
+					<span style="color:red">
+						已支付
+					</span></p>
+					{% endif %}
+				</div>				
+				<div class="sex">
+					{% if user.status == 0 %}
+					<a href="{{url}}index/confirm/id/{{user.id}}"><button class="sub">确认订单</button></a>
+					{% endif %}
+					{% if user.status == 1 %}
+					{% if user.p_status == 0 %}
+					<a href="{{url}}index/zhifu/id/{{user.id}}"><button class="sub">支付订单</button></a>
+					{% endif %}
+					{% endif %}
+				</div>                                
+    {% else %}  
+        <div class="sec3">
+            <img src="{{url}}public/dindan/images/4.jpg"/>
+            <h1>您还没有特惠路线</h1>
+            <button><a href="{{url}}index/preferential">立即购买</a></button>
+        </div>  
+    {% endfor %}  
+    </section>
+    <footer></footer>
+</div>
+</body>
+</html>
+<script src="{{url}}public/dindan/js/zepto.min1.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+    $('.sec2 li').on('tap',function(){
+        var index=$(this).index();
+//      console.log(index);
+        $('.sec3').hide().eq(index).show();
+        $(this).css('color','#f3b90d').siblings().css('color','black');
+        $(this).css('border-bottom','0.2rem solid #f3b90d').siblings().css('border-bottom','none');
+    })
+</script>

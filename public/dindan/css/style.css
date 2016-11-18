@@ -1,0 +1,138 @@
+@import url(m_style.css);
+.full {
+  height: 100%;
+  width: 100%;
+}
+html,
+body,
+.warp {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 62.5%;
+}
+header {
+  width: 100%;
+  height: 4rem;
+  background: #1a1a1e;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 4rem;
+}
+header .header-left {
+  height: auto;
+  margin-left: 1rem;
+  margin-bottom: -1rem;
+}
+header .header-center {
+  -webkit-box-flex: 1;
+}
+header .header-center p {
+  color: #fff;
+  font-size: 1.6rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+header .header-right {
+  width: 4rem;
+  height: auto;
+}
+section {
+  -webkit-box-flex: 1;
+  background: #f9f9f9;
+}
+section .sec1 {
+  width: 100%;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  border-bottom: 0.1rem solid #e1e1e1;
+  background: #fff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .sec1 .sec1-left {
+  height: auto;
+  margin-left: 1rem;
+  margin-bottom: -1rem;
+}
+section .sec1 .sec1-left img {
+  height: 2rem;
+}
+section .sec1 .sec1-center {
+  -webkit-box-flex: 1;
+}
+section .sec1 .sec1-center p {
+  color: black;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+section .sec1 .sec1-right {
+  width: 4rem;
+}
+section .sec1 .sec1-right img {
+  height: 2rem;
+}
+section .sec2 {
+  width: 100%;
+  height: 4rem;
+  border-bottom: 0.2rem solid #e1e1e1;
+  background: #fff;
+}
+section .sec2 ul {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  line-height: 4rem;
+  font-size: 1.5rem;
+}
+section .sec2 ul li {
+  -webkit-box-flex: 1;
+  text-align: center;
+  margin: 0 1.5rem;
+  -webkit-box-sizing: border-box;
+  font-weight: 600;
+}
+section .sec2 ul li:first-child {
+  color: #f3b90d;
+  border-bottom: 0.2rem solid #f3b90d;
+}
+section .hide {
+  display: none;
+}
+section .sec3 {
+  width: 100%;
+  height: auto;
+}
+section .sec3 img {
+  display: block;
+  margin: 6rem auto;
+  margin-bottom: 0rem;
+}
+section .sec3 h1 {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+}
+section .sec3 h2 {
+  font-weight: normal;
+  text-align: center;
+  margin-top: 0.2rem;
+  font-size: 1.3rem;
+}
+section .sec3 button {
+  width: 10rem;
+  height: 4rem;
+  color: #9d5e07;
+  font-weight: 600;
+  background: #ffd702;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}

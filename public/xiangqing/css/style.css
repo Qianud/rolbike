@@ -1,0 +1,125 @@
+@import url('m_reset.css');
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+}
+.wrap {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.wrap header {
+  width: 100%;
+  height: 3rem;
+  background: #1b1b20;
+  padding: 0 10px;
+  box-sizing: border-box;
+  line-height: 3rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.wrap header a {
+  color: white;
+}
+.wrap header a i {
+  display: block;
+  line-height: 3rem;
+  margin-right: 3px;
+}
+.wrap header .h-center {
+  color: white;
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.wrap section {
+  -webkit-box-flex: 1;
+  overflow-y: auto;
+}
+.box {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  font-size: 0.6rem;
+  width: 100%;
+  height: 7.7rem;
+  background: 0;
+  border-bottom: 1px solid #e1e6eb;
+}
+.box .check {
+  color: #ccc;
+  margin-top: 2rem;
+  margin-right: 0.3rem;
+}
+.box dl {
+  -webkit-box-flex: 1;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 1rem;
+}
+.box dl dt {
+  width: 4rem;
+  height: 4rem;
+  background: 0;
+  margin-right: 0.3rem;
+}
+.box dl dt img {
+  width: 100%;
+  height: 100%;
+  background: 0;
+}
+.box dl dd .danjia {
+  color: #ff757f;
+  display: block;
+  margin-top: 1.1rem;
+}
+.box dl dd h1 {
+  font-weight: bold;
+}
+.box dl dd p {
+  color: #949ca4;
+}
+.box .box-right {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  margin-top: 1.2rem;
+  text-align: right;
+}
+.box .box-right p {
+  margin-top: 2rem;
+}
+.box .box-right p span {
+  width: 24px;
+  height: 24px;
+  background: 0;
+  display: inline-block;
+  border: 1px solid #949CA4;
+  text-align: center;
+  line-height: 24px;
+}
+.box2 {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  background: #fff;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 0.6rem;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+.box2 i {
+  display: block;
+  line-height: 3rem;
+  margin-right: 3px;
+  color: #CCCCCC;
+}
+.box2 p {
+  -webkit-box-flex: 1;
+  text-align: center;
+}

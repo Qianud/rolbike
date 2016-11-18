@@ -1,0 +1,186 @@
+@import url(m_reset.css);
+.full {
+  width: 100%;
+  height: 100%;
+}
+html,
+body,
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  font-size: 62.5%;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 3.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  background: #333333;
+}
+header .header-left {
+  width: 3rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+}
+header .header-left dl {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+header .header-left dl dt {
+  padding-left: 1rem;
+  box-sizing: border-box;
+}
+header .header-left dl dd {
+  color: #c1c1c1;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+}
+header .header-right {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 3.5rem;
+  font-size: 16px;
+  color: #c1c1c1;
+}
+section {
+  -webkit-box-flex: 1;
+  overflow: auto;
+}
+section .sec1 {
+  width: 100%;
+  height: 12rem;
+  overflow: hidden;
+  position: relative;
+}
+section .sec1 img {
+  width: 100%;
+  height: 12rem;
+}
+section .sec1 ul {
+  width: 5rem;
+  height: 1rem;
+  position: absolute;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -11rem;
+  margin: auto;
+}
+section .sec1 ul li {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #b8c2c8;
+  margin: 0 0.5rem;
+  border-radius: 1rem;
+}
+section .sec1 ul .lis {
+  background: #fff;
+}
+section .sec2 {
+  width: 100%;
+  height: 22.8rem;
+  padding: 0 1rem;
+  padding-top: 1rem;
+  box-sizing: border-box;
+  border: none;
+}
+section .sec2 .se {
+  width: 100%;
+  height: 10rem;
+  background: white;
+  padding-top: 1rem;
+  border-radius: 0.5rem;
+  border-left: 1px solid #cccccc ;
+  border-right: 1px solid #cccccc ;
+  border-bottom: 2px solid #cccccc;
+  -webkit-box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  text-align: center;
+}
+section .sec2 .se .left {
+  width: 15rem;
+  height: 10rem;
+  margin-top: 1rem;
+  -webkit-box-flex: 1;
+}
+section .sec2 .se .left dd {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+section .sec2 .se .right {
+  width: 15rem;
+  height: 10rem;
+  margin-top: 1rem;
+  -webkit-box-flex: 1;
+}
+section .sec2 .se .right dd {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+section .sec2 .se1 {
+  width: 100%;
+  height: 10rem;
+  background: white;
+  padding-top: 1rem;
+  border-radius: 0.5rem;
+  border-left: 1px solid #cccccc ;
+  border-right: 1px solid #cccccc ;
+  border-bottom: 2px solid #cccccc;
+  -webkit-box-sizing: border-box;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  margin-top: 1rem;
+  text-align: center;
+}
+section .sec2 .se1 .left {
+  width: 15rem;
+  height: 10rem;
+  margin-top: 1rem;
+  -webkit-box-flex: 1;
+}
+section .sec2 .se1 .left dd {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+section .sec2 .se1 .right {
+  width: 15rem;
+  height: 10rem;
+  margin-top: 1rem;
+  -webkit-box-flex: 1;
+}
+section .sec2 .se1 .right dd {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  s: ;
+}
+section .mask {
+  position: absolute;
+  top: 0px;
+  filter: alpha(opacity=60);
+  background-color: #777;
+  z-index: 1002;
+  left: 0px;
+  opacity: 0.5;
+  -moz-opacity: 0.5;
+}
+footer {
+  width: 100%;
+  height: 4.2rem;
+  background: #f5f5f5;
+  border-top: 1px solid #dedede;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+footer dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+  margin-top: 0.5rem;
+}
